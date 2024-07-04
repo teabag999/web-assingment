@@ -4,20 +4,20 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #55AD9B;
+    background-color: #e0f7e9; /* Light green background */
     color: #333;
 }
 
 header {
-    background-color: #D8DFE3;
-    color: black;
+    background-color: #b2dfdb; /* Light teal */
+    color: #004d40; /* Darker green for text */
     padding: 15px 0;
     text-align: center;
     font-size: 1.5rem;
 }
 
 nav {
-    background-color: #9FD2B3;
+    background-color: #80cbc4; /* Medium green */
     padding: 10px 0;
 }
 
@@ -25,7 +25,7 @@ nav {
     display: none;
     font-size: 24px;
     cursor: pointer;
-    color: #ecf0f1;
+    color: #004d40; /* Darker green */
     padding: 10px;
 }
 
@@ -34,7 +34,6 @@ nav {
     padding: 0;
     margin: 0;
     text-align: center;
-    
 }
 
 #menu li {
@@ -44,14 +43,15 @@ nav {
 
 #menu li a {
     text-decoration: none;
-    color: #ecf0f1;
+    color: #03004d; /* Darker green */
     padding: 12px 20px;
     display: inline-block;
     transition: background-color 0.3s;
 }
 
 #menu li a:hover {
-    background-color: #20c511;
+    background-color: #004d40; /* Darker green for hover */
+    color: #e0f7e9; /* Light green text on hover */
 }
 
 #menu-toggle {
@@ -70,7 +70,7 @@ nav {
     #menu {
         display: none;
         position: absolute;
-        background-color: #34495e;
+        background-color: #4f9186; /* Darker green */
         width: 100%;
         top: 50px;
         text-align: center;
@@ -96,10 +96,10 @@ nav {
 }
 
 .project-item {
-    background-color: #f5f5f5;
+    background-color: #f1f8e9; /* Very light green */
     padding: 20px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #c8e6c9; /* Light green border */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -115,15 +115,14 @@ nav {
     border-radius: 6px;
 }
 
-
 main {
     padding: 20px;
 }
 
 footer {
     text-align: center;
-    background-color: #34495e;
-    color: white;
+    background-color: #004d40; /* Darker green */
+    color: #e0f7e9; /* Light green text */
     padding: 15px 0;
     font-size: 0.9rem;
 }
@@ -131,7 +130,7 @@ footer {
 form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -157,7 +156,7 @@ form textarea {
 }
 
 form button {
-    background-color: #2ecc71;
+    background-color: #66bb6a; /* Medium green */
     color: white;
     border: none;
     padding: 12px 24px;
@@ -168,8 +167,9 @@ form button {
 }
 
 form button:hover {
-    background-color: #27ae60;
+    background-color: #388e3c; /* Darker green */
 }
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -181,4 +181,39 @@ form button:hover {
     height: 350px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+/* Site Report Section */
+.report-section, .image-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Unified padding */
+    border-radius: 8px; /* Unified border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-section h2, .image-section h2 {
+    font-size: 1.8rem;
+    color: #004d40; /* Darker green for headings */
+    margin-bottom: 15px;
+}
+
+.report-section p, .image-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for readability */
+}
+
+.image-section .image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-section .image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
